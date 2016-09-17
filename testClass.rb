@@ -54,3 +54,12 @@ a.kawabunga
 p a.singleton_methods()
 
 Book.kawabunga("Pewds")
+
+class Word < String
+  def palindrome?
+    self == self.reverse
+  end
+end
+
+s = Word.new("level")
+puts s.palindrome?
